@@ -7,12 +7,11 @@ body {
       }
     .filmlist{
         /* designar min "5 favoritfilmer listan" */
-        color: #0031FF;
-        border: 5px yellow;                  
+        color: #0031FF;                  
         margin: 3px;
         padding: 30px;
         width: 300px;
-        height: 150px;
+        height: auto;
     }
     .right{
         float: right;
@@ -31,6 +30,7 @@ body {
         border-color: rgb(250, 164, 52);
         padding: 2px;
         width: 120px;
+        border-radius: 10px;
     }
     .underrubriken2{
         /* designar några av mina underrubriker */
@@ -41,10 +41,12 @@ body {
         border-color: yellow;
         width: 400px;
         padding: 2px;
+        border-radius: 5px;
     }
     a{
         color: red;
         font-weight: bold;
+        text-decoration: none;
     }
     .imageofme{
         border: solid;
@@ -61,14 +63,27 @@ body {
     }
     h1 {color: rgb(255, 255, 28);}
     .knapp{
-        color: yellow;
+        color: red;
         background-color: black;
         border: 4px solid yellow;
+        border-radius: 10px;
         padding: 5px;
         margin: 4px;
     }
-    li{
-        margin: 3px;
+    /* mouse over link */
+    .knapp:hover {
+    background-color: rgb(60, 196, 214);
+    text-decoration: none;
     }
+  
+    /* selected link */
+    .knapp:active {
+    border-width: 3px;
+    border-color: green;
+    }
+    li{
+        margin: 20px;
+    }
+    
 
 
