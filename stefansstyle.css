@@ -87,5 +87,7 @@ body {
     }
     footer{
         color: rgb(255, 136, 0);
+        text-align-last: left;
+        padding-top: 27%;
     }
   
