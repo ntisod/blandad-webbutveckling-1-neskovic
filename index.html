@@ -1,35 +1,177 @@
 <!DOCTYPE html>
+<!-- Sidan är gjort av Stefan Nešković Te19 NTI Södertälje -->
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cssforindexpage.css">
-    <title>Stefans sajt</title>
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="indexpagecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="javascriptfile.js"></script>
 </head>
 <body>
-    <header class="row col-12">
-        <h1>Stefans sajt</h1>
-    </header>
-    <div class="row">
-        <nav class="col-3 col-s-3">
-            <a href="om-stefan.html" class="knapp">Om mig</a>
-            <a href="javascript-exempel.html" class="knapp">Klicka</a>
-            <a href="formular.html">Ett formulär</a>
-        </nav>
-        <main class="col-6 col-s-9">
-            <h2>Varför borde du läsa mina sidor? För att deras skapelse hjälpte mig att få nya ideer och hoppningsvis kommer 
-                hjälpa dig att förstå hur spännande kan en webbsida faktiskt se ut. </h2>
-            <p class="textconfiguration">
-                Hej, välkommen till min webbsida. Hoppas att du njuter av innehållet.
-            </p>
-        </main>
-        <aside class="col-3 col-s-12">
-            <h2>Reklam</h2>
-            <p>Bästa kvalitet med låga priser.</p>
-        </aside>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
-    <footer class="col-12">
-        <p>Copyright 2020 Stefan Ne&scaron;kovi&cacute;, NTI Gymnasiet Södertälje</p>
-    </footer>  
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Min <span>första </span>webbsida</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Startsida</a></li>
+                <li><a href="#about" class="menu-btn">Om mig</a></li>
+                <li><a href="#teams" class="menu-btn">Filmer</a></li>
+                <li><a href="#skills" class="menu-btn">Recept</a></li>
+                <li><a href="#services" class="menu-btn">Formulär</a></li>
+                <li><a href="#contact" class="menu-btn">Kontakta mig</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hem section -->
+    <section class="home" id="home">
+      <div class="max-width">
+          <div class="row">
+            <div class="home-content">
+                <div class="text-1">Hej, Jag Heter</div>
+                <div class="text-2">Stefan Ne&scaron;kovi&cacute;</div>
+                <div class="text-3">Och jag är <span class="typing"></span></div>
+                <a href="#">Anställ mig</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Om mig section -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Om mig</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/stefanbild.jpg" alt="bildpåstefan">
+                </div>
+                <div class="column right">
+                    <div class="text">Jag är Stefan och jag är <span class="typing-2"></span></div>
+                    <p>Hej, Stefan heter jag och kommer från Serbien. Jag har bott i Sverige i 3 år. Jag är 19 år gammal nu och går på NTI Gymnasiet i Södertälje. Det är en stad nära Stockholm och jag tycker om den för att den är lugn. Jag har flyttat till Sverige med min familj, yngre bror och föräldrar. Jag tycker om att träna på gymmet och tycker om att spela fotboll och tennis(både bordtennis och den riktiga). Efter att jag har varit här i två och halv år kan jag faktiskt säga att Sverige är mycket fint land och folk är otroligt snälla mot varandra.</p>
+                    <p>Sedan jag har varit en liten pojke tyckte jag om att leka med dator. Nu går jag på teknik programmet som sagt på NTI Gymnasiet och tycker om programmering och matte. Min framtidsplan är att studera på KTH Universitet i Stockholm. Jag har några inriktningar i baktankar men är inte säker på vilket jag kommer att välja när det blir dags för val.</p>
+                    <a href="#">Ladda ned CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorita filmer section -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Mina favorita filmer</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/the_foreigner.jpg" alt="bildpåhuvudperson">
+                        <div class="text">The Foreigner(2017)</div>
+                        <p>En ödmjuk affärsman med ett begravt förflutet söker rättvisa när hans dotter dödas i en terrorhandling. En katt-och-mus-konflikt följer med en regeringsman, vars förflutna kan leda till mördarnas identitet.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/olympus_has_fallen.jpg" alt="bildpådetvitahuset">
+                        <div class="text">Olympus Has Fallen(2013)</div>
+                        <p>Secret Service-agent Mike Banning befinner sig fastnat i Vita huset i kölvattnet av en terroristattack och arbetar med nationell säkerhet för att rädda presidenten från sina kidnappare.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/london_has_fallen.jpg" alt="bildpåhuvudperson">
+                        <div class="text">London Has Fallen(2016)</div>
+                        <p>I London för premiärministerns begravning hamnar Mike Banning i ett komplott för att mörda alla närvarande världsledare.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/extraction.jpg" alt="bildpåhuvudperson">
+                        <div class="text">Extraction(2020)</div>
+                        <p>Tyler Rake, en orädd legosoldat på den svarta marknaden, inleder den mest dödliga utvinningen av sin karriär när han anlitas för att rädda den kidnappade sonen till en fängslad internationell brottsherre.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/survivor.jpg" alt="bildpåhuvudperson">
+                        <div class="text">Survivor(2015)</div>
+                        <p>En utrikestjänsteman i London försöker förhindra en terroristattack som träffar New York City, men tvingas gå på flykt när hon är inramad för brott som hon inte begått.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakta mig section-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Kontakta mig</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Gärna ställ dina frågor</div>
+                    <p>Här får du se mina kontaktuppgifter och ställa frågor vilka jag kommer svara på inom max 5 arbetsdagar.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Namn</div>
+                                <div class="sub-title">Stefan Ne&scaron;kovi&cacute;</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Adress</div>
+                                <div class="sub-title">Södertälje, Sweden</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">E-mail</div>
+                                <div class="sub-title">stneskovic5590@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Meddela mig</div>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" class="fullname" placeholder="Namn">
+                            </div>
+                            <div class="field email">
+                                <input type="text" class="email-input" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" class="subject" placeholder="Ämne">
+                        </div>
+                        <div class="field textarea">
+                            <textarea class="message" cols="30" rows="10" placeholder="Meddelande.."></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button class="send-msg" type="submit" name="send">Skicka meddelande</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <span>Sidan är gjort av <a href="https://www.ntigymnasiet.se/sodertalje/">NTI Gymnasiet</a> Södertäljes student Stefan Ne&scaron;kovi&cacute; | <span class="far fa-copyright"></span> 2021 Alla rättigheter förbehållna.</span>
+    </footer>
 </body>
 </html>

@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -48,59 +46,65 @@
     }
 }
 
-nav{
-    width: 25%;
-    float: left;
-    background-color: lightgrey;
-}
-main{
-    width: 75%;
-    float: left;
-    background-color: rgb(2, 48, 8);
-}
-aside{
-    background-color: lightyellow;
-}
-.textconfiguration{
-    color: rgb(240, 104, 13);
-}
-footer{
-    background-color: rgb(19, 107, 100);
-    color: rgb(255, 136, 0);
-    text-align-last: left;
-}
-.knapp{
-    color: red;
-    background-color: rgb(0, 0, 0);
-    border: 4px solid rgb(0, 17, 255);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 4px;
-}
-/* mouse over link */
-.knapp:hover {
-background-color: rgb(255, 251, 0);
-text-decoration: none;
-}
-
-/* selected link */
-.knapp:active {
-border-width: 3px;
-border-color: rgb(161, 3, 3);
-}
-a{
-    color: red;
-    font-weight: bold;
-    text-decoration: none;
-}
-header{
-    background-color: rgba(89, 90, 2, 0.986);
-}
-h1 {color: rgb(221, 13, 6);}
-h2 {color: rgb(209, 12, 5);}
-
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
     }
-}
+  }
