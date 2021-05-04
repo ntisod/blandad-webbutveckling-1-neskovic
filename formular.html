@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulär</title>
     <link rel="stylesheet" href="formular.css">
-    <script src = "formular.js"></script>
+    <script src = "script.js"></script>
 </head>
 <body>
     <form action="">
@@ -18,19 +18,18 @@
         <input type="text" name="epost" id="epost"><br>
     <hr>
 
-        <input type="radio" name="choice" id="chsoftware" name="software">
+        <input type="radio" name="answer" id="software" name="software" onchange="changeChoices()">
         <label for="chsoftware">Software</label><br>
-        <input type="radio" name="choice" id="chengineering" name="engineering">
+        <input type="radio" name="answer" id="engineering" name="engineering" onchange="changeChoices()">
         <label for="chengineering">Engineering</label><br>
     <hr>
-        <input type="checkbox" name="subject1" id="subject1" value="English 7">
-        <label for="subject1">Engelska 7</label><br>
-        <input type="checkbox" name="subject2" id="subject2" value="PE">
-        <label for="subject2">Idrott och hälsa 2</label><br>
-        <input type="checkbox" name="subject3" id="subject3" value="Entrepreneurship">
-        <label for="subject3">Entreprenörskap</label><br>
-        <input type="checkbox" name="subject4" id="subject4" value="Mothertongue">
-        <label for="subject4">Modersmål</label><br>
+
+        <label>First Choice
+            <select id="choice1"></select>
+        </label>
+        <label>Second choice
+            <select id="choice2"></select>
+        </label>
         <br>
         <input type="submit" value="Skicka in">
     </form>
