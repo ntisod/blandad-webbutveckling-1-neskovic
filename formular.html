@@ -6,66 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulär</title>
     <link rel="stylesheet" href="formular.css">
-    <script src="script.js"></script>
-    <style>
-        body {
-            background-color:black;
-            font-family: Verdana;
-            text-align: center;
-        }
-        form {
-            background-color: #fff;
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 30px 20px;
-            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-        }
-        .form-control {
-            text-align: left;
-            margin-bottom: 25px;
-        }
-        .form-control label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        .form-control input,
-        .form-control select,
-        .form-control textarea {
-            border: 1px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            padding: 10px;
-            display: block;
-            width: 95%;
-        }
-        .form-control input[type="radio"],
-        .form-control input[type="checkbox"] {
-            display: inline-block;
-            width: auto;
-        }
-        button {
-            background-color: yellowgreen;
-            border: 1px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            font-size: 21px;
-            display: block;
-            width: 100%;
-            margin-top: 50px;
-            margin-bottom: 20px;
-        }
-        label{
-            color: black;
-        }
-        form{
-            border:groove;
-            border-color: blue;
-            background-color: grey;
-        }
-    </style>
+    <script src="formular.js"></script>
 </head>
 <body>
-    <form action="">
+    <form action="send">
         <label for="fname">Förnamn</label><br>
         <input type="text" name="fname" id="fname"><br>
         <label for="lname">Efternamn</label><br>
@@ -74,20 +18,21 @@
         <input type="text" name="epost" id="epost"><br>
     <hr>
 
-        <input type="radio" name="answer" id="software" name="software" onchange="changeChoices()">
+        <input type="radio" name="answer" id="software" onchange="changeChoices()">
         <label for="software">Software</label><br>
-        <input type="radio" name="answer" id="engineering" name="engineering" onchange="changeChoices()">
+        <input type="radio" name="answer" id="engineering" onchange="changeChoices()">
         <label for="engineering">Engineering</label><br>
     <hr>
 
         <label>First Choice
             <select id="choice1"></select>
         </label>
-        <label>Second choice
+        <label>
+            Second choice
             <select id="choice2"></select>
         </label>
         <br>
-        <input type="submit" value="Skicka in">
+        <button type="button" onclick="window.location.href='index.html'">Submit</button>
     </form>
 </body>
 </html>
