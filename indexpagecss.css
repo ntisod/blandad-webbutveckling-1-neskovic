@@ -35,12 +35,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .films, .contact, footer{
+.about, .films, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
-.services .serv-content,
-.skills .skills-content,
+.about .about-content,.films .films-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -213,7 +211,7 @@ section .title::after{
     background: none;
 }
 
-/* om mig */
+/* om mig och recept*/
 .about .about-content .left{
     width: 45%;
 }
@@ -498,11 +496,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .skills .skills-content .column,
+    
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -522,9 +516,6 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
-        width: 100%;
-    }
 }
 
 @media (max-width: 500px) {
@@ -534,8 +525,7 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .about .about-content .right .text{
         font-size: 19px;
     }
     .contact .right form .fields{

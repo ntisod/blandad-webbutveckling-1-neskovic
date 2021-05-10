@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        // sticky navbar on scroll script
+        // sticky navbar on scroll
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
@@ -15,7 +15,7 @@ $(document).ready(function(){
         }
     });
 
-    // slide-up script
+    // script till rullning(slide-up)
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
         // removing smooth scroll on slide-up button click
@@ -23,7 +23,7 @@ $(document).ready(function(){
     });
 
     $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
+        // applicera igen smidigt rulla på menyalternativ klicka
         $('html').css("scrollBehavior", "smooth");
     });
 
