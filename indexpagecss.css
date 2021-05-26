@@ -546,4 +546,7 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .home{
+        background: url("images/imageofstefancrop.jpg") no-repeat center;
+    }
 }
