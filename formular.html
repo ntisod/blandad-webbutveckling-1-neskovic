@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+    <link rel="stylesheet" href="formular.css">
+    <script src="formular.js"></script>
+</head>
+<body>
+    <form action="send">
+        <label for="fname">Förnamn</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Efternamn</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="epost">E-post adress</label><br>
+        <input type="text" name="epost" id="epost"><br>
+    <hr>
+
+        <input type="radio" name="answer" id="software" onchange="changeChoices()">
+        <label for="software">Software</label><br>
+        <input type="radio" name="answer" id="engineering" onchange="changeChoices()">
+        <label for="engineering">Engineering</label><br>
+    <hr>
+
+        <label>First Choice
+            <select id="choice1"></select>
+        </label>
+        <label>
+            Second choice
+            <select id="choice2"></select>
+        </label>
+        <br>
+        <button type="button" onclick="window.location.href='index.html'">Submit</button>
+    </form>
+</body>
+</html>
